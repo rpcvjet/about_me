@@ -1,22 +1,3 @@
-<!DOCTYPE html>
-<html>
-
-
-<head>
-  <title> Class Demo> </title>
-</head>
-
-<body>
-
-  <p>What is your name? </p>
-  <p> How old are you?</p>
-  <p> Where are your from? </p>
-  <p> What is your favorite hobby?</p>
-
-
-
-
-<script>
 var username = prompt('What is your name?');
 var age = prompt('How old are you?');
 var home = prompt('Where are you from?');
@@ -29,9 +10,3 @@ var hobby = prompt('What is your favorite hobby?');
   console.log('The user\'s age is ' + age);
   console.log('The user\'s home is ' + home);
   console.log('The user\'s hobby is ' + hobby);
-</script>
-</body>
-
-
-
-</html>
