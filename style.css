@@ -21,10 +21,12 @@ header{
 section{
 text-align: center;
   outline: 1px black solid;
+width: auto;
 }
 
 footer{
 text-align: center;
-
-
+align-items: flex-end;
+outline: 1px black solid;
+height: 50px
 }

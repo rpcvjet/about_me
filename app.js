@@ -5,10 +5,11 @@ var counter = 0;
 prompt('Let\'s Play a Game! Choose Yes or No. Press enter when you are ready to begin');
 var spicy = prompt('Does Kenneth like spicy food?');
 if (spicy.toUpperCase() === 'YES' || spicy.toUpperCase() === 'Y')
-{counter++;}
+{counter++;
+  console.log (spicy.toUpperCase());}
 else{};
 
-var state = prompt ('Was Born in Alabama?');
+var state = prompt ('Was Kenneth born in Alabama?');
 
 if (state.toUpperCase() === 'NO' || state.toUpperCase() === 'N')
 {counter++;}
@@ -33,8 +34,8 @@ else{};
 if (counter === 5)
    {prompt('Congratulations. You got all ' + counter + ' questions correct. You are the champion!');}
 
-else if (counter <= 4)
+else if (counter >= 3 && counter <= 4)
   {prompt('Not bad, you got  ' + counter + ' questions correct');}
 
 else
-{prompt('Seriously, you only got ' + counter + ' questions right? You suck!')}
+{prompt('Seriously, you only got ' + counter + ' questions right? You suck!');}
