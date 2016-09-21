@@ -1,4 +1,30 @@
-* {
+body {
 
-  color: red;
+background-image: url('background.png');
+
+}
+img {
+
+
+
+}
+h1 {
+  text-align: center;
+  float: top;
+}
+
+header{
+  outline: 1px black solid;
+
+}
+
+section{
+text-align: center;
+  outline: 1px black solid;
+}
+
+footer{
+text-align: center;
+
+
 }
