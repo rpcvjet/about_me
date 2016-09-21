@@ -30,3 +30,8 @@ align-items: flex-end;
 outline: 1px black solid;
 height: 50px
 }
+
+li{
+list-style-position: inside;
+
+}
