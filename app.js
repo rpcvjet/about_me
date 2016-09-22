@@ -1,6 +1,7 @@
 'use strict';
 
 var counter = 0;
+var lucky = 12;
 
 prompt('Let\'s Play a Game!  Click OK when you are ready to begin');
 var spicy = prompt('Does Kenneth like spicy food?');
@@ -62,11 +63,46 @@ else{
   console.log ('Kenneth is the best looking man.');
 };
 
-if (counter === 5)
+for (var i = 3; i >= 0; i--){
+  var guess = parseInt(prompt('Pick a number between 1-20.'));
+  console.log(guess);
+  if (guess > lucky){
+    alert ('That\'s not it. Your guess is too HIGH! Choose again. You have ' + i + ' more chances.');
+  }
+  if (guess < lucky){
+    alert ('That\'s not it. Your guess is too LOW! Choose again. You have ' + i + ' more chances.');
+  }
+  else {
+    alert('That\'s right!');
+    counter++;
+    break;
+  }
+}
+var attempts = 0;
+var choice = true;
+var country = ['ROMANIA', 'ITALY', 'GERMANY', 'ENGLAND', 'GUATEMALA', 'SPAIN', 'JAPAN', 'THAILAND', 'HOLLAND', 'FRANCE', 'POLAND', 'SERBIA', 'BELGIUM', 'TURKEY'];
+
+while(choice && attempts < 6){
+  var guess2 = prompt('I have lived in a few countries. Guess one!');
+  for (var j = 0; j < country.length; j++)
+    if (country[i] === guess2.toUpperCase()){
+      alert('That\'s right! I have lived in ' + guess2 + '!');
+      choice = false;
+      counter++;
+      break;
+      console.log(guess2);
+    }
+
+  if (country[i] !== guess2.toUpperCase()){
+    alert('Nope. I have never lived in ' + guess2 + '!' + ' Try again.');
+    attempts++;
+  }
+}
+if (counter === 7)
    {prompt('Congratulations. You got all ' + counter + ' questions correct. You are the champion!');}
 
-else if (counter >= 3 && counter <= 4)
-  {prompt('Not bad, you got  ' + counter + ' questions correct');}
+else if (counter >= 3 && counter <= 6)
+  {prompt('Not bad, you got  ' + counter + ' questions correct.');}
 
 else
 {prompt('Seriously, you only got ' + counter + ' questions right? You suck!');}
