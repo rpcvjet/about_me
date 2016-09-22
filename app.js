@@ -78,41 +78,49 @@ function guapo() {
 }
 guapo();
 
-for (var i = 3; i >= 0; i--){
-  var guess = parseInt(prompt('Pick a number between 1-20.'));
-  console.log(guess);
-  if (guess > lucky){
-    alert ('That\'s not it. Your guess is too HIGH! Choose again. You have ' + i + ' more chances.');
-  }
-  if (guess < lucky){
-    alert ('That\'s not it. Your guess is too LOW! Choose again. You have ' + i + ' more chances.');
-  }
-  else {
-    alert('That\'s right!');
-    counter++;
-    break;
+function numGuess() {
+  for (var i = 3; i >= 0; i--){
+    var guess = parseInt(prompt('Pick a number between 1-20.'));
+    console.log(guess);
+    if (guess > lucky){
+      alert ('That\'s not it. Your guess is too HIGH! Choose again. You have ' + i + ' more chances.');
+    }
+    if (guess < lucky){
+      alert ('That\'s not it. Your guess is too LOW! Choose again. You have ' + i + ' more chances.');
+    }
+    else {
+      alert('That\'s right!');
+      counter++;
+      break;
+    }
   }
 }
+numGuess();
+
 var attempts = 0;
 var choice = true;
 var country = ['ROMANIA', 'ITALY', 'GERMANY', 'ENGLAND', 'GUATEMALA', 'SPAIN', 'JAPAN', 'THAILAND', 'HOLLAND', 'FRANCE', 'POLAND', 'SERBIA', 'BELGIUM', 'TURKEY'];
 
-while(choice && attempts < 6){
-  var guess2 = prompt('I have lived in a few countries. Guess one!');
-  for (var j = 0; j < country.length; j++)
-    if (country[i] === guess2.toUpperCase()){
-      alert('That\'s right! I have lived in ' + guess2 + '!');
-      choice = false;
-      counter++;
-      break;
-      console.log(guess2);
-    }
+function travel() {
+  while(choice && attempts < 6){
+    var guess2 = prompt('I have traveled to a few countries. Guess one!');
+    for (var j = 0; j < country.length; j++)
+      if (country[j] === guess2.toUpperCase()){
+        alert('That\'s right! I have traveled to ' + guess2 + '!');
+        choice = false;
+        counter++;
+        console.log(guess2);
+        break;
+      }
 
-  if (country[i] !== guess2.toUpperCase()){
-    alert('Nope. I have never lived in ' + guess2 + '!' + ' Try again.');
-    attempts++;
+    if (country[i] !== guess2.toUpperCase()){
+      alert('Nope. I have never traveled to ' + guess2 + '!' + ' Try again.');
+      attempts++;
+    }
   }
 }
+travel();
+
 if (counter === 7)
    {prompt('Congratulations. You got all ' + counter + ' questions correct. You are the champion!');}
 
