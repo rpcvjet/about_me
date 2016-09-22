@@ -3,65 +3,80 @@
 var counter = 0;
 var lucky = 12;
 
-prompt('Let\'s Play a Game!  Click OK when you are ready to begin');
-var spicy = prompt('Does Kenneth like spicy food?');
-if (spicy.toUpperCase() === 'YES' || spicy.toUpperCase() === 'Y')
+function spicy() {
+  prompt('Let\'s Play a Game!  Click OK when you are ready to begin');
+  var spicy = prompt('Does Kenneth like spicy food?');
+  if (spicy.toUpperCase() === 'YES' || spicy.toUpperCase() === 'Y')
 
-{alert('That\'s right!');
-  console.log ('I love spicy food!');
-  counter++;
+  {alert('That\'s right!');
+    console.log ('I love spicy food!');
+    counter++;
+  }
+  else {
+    alert('Sorry, that is incorrect');
+    console.log ('I love spicy food!');
+  };
 }
-else {
-  alert('Sorry, that is incorrect');
-  console.log ('I love spicy food!');
-};
+spicy();
 
-var state = prompt ('Was Kenneth born in Alabama?');
+function state() {
+  var state = prompt ('Was Kenneth born in Alabama?');
 
-if (state.toUpperCase() === 'NO' || state.toUpperCase() === 'N')
-{alert('Correct. I was born in Florida');
-  console.log('I was born in Florida');
-  counter++;
+  if (state.toUpperCase() === 'NO' || state.toUpperCase() === 'N')
+  {alert('Correct. I was born in Florida');
+    console.log('I was born in Florida');
+    counter++;
+  }
+
+  else{
+    alert('Uhh, no.');
+    console.log ('I was born in Florida');
+  };
 }
+state();
 
-else{
-  alert('Uhh, no.');
-  console.log ('I was born in Florida');
-};
-
-var sport = prompt ('Did Kenneth play football in college?');
-if (sport.toUpperCase() === 'NO' || sport.toUpperCase() === 'N')
-{alert('Correct. I did not play football. I was on the crew team.');
-  console.log('I did not play football. I was on the rowing team.');
-  counter++;}
-else{
-  alert('WRONG! I\'m no meathead.');
-  console.log ('I did not play football. I was on the rowing team.');
-};
-
-var dreamjob = prompt ('Will Kenneth ever be an employed software engineer?');
-if (dreamjob.toUpperCase() === 'YES' || dreamjob.toUpperCase() === 'Y')
-{alert('Correct. I cetainly hope so at least.');
-  console.log('Yes he will become a software engineer.');
-  counter++;
+function football() {
+  var sport = prompt ('Did Kenneth play football in college?');
+  if (sport.toUpperCase() === 'NO' || sport.toUpperCase() === 'N')
+  {alert('Correct. I did not play football. I was on the crew team.');
+    console.log('I did not play football. I was on the rowing team.');
+    counter++;}
+  else{
+    alert('WRONG! I\'m no meathead.');
+    console.log ('I did not play football. I was on the rowing team.');
+  };
 }
+football();
 
-else{
-  alert('Incorrect! Have you no faith in me?');
-  console.log ('Yes he will become a software engineer.');
+function engineer() {
+  var dreamjob = prompt ('Will Kenneth ever be an employed software engineer?');
+  if (dreamjob.toUpperCase() === 'YES' || dreamjob.toUpperCase() === 'Y')
+  {alert('Correct. I cetainly hope so at least.');
+    console.log('Yes he will become a software engineer.');
+    counter++;
+  }
+
+  else{
+    alert('Incorrect! Have you no faith in me?');
+    console.log ('Yes he will become a software engineer.');
+  }
 }
+engineer();
 
-var handsome = prompt ('Is Kenneth the most handsome man in Code 201?');
-if (handsome.toUpperCase() === 'YES' || handsome.toUpperCase() === 'Y')
-{alert('Correct. Well, obviously!');
-  console.log('I\'m too sexy for this course');
-  counter++;
+function guapo() {
+  var handsome = prompt ('Is Kenneth the most handsome man in Code 201?');
+  if (handsome.toUpperCase() === 'YES' || handsome.toUpperCase() === 'Y')
+  {alert('Correct. Well, obviously!');
+    console.log('I\'m too sexy for this course');
+    counter++;
+  }
+
+  else{
+    alert('Incorrect! Look around, truly I am the best goodlooking');
+    console.log ('Kenneth is the best looking man.');
+  };
 }
-
-else{
-  alert('Incorrect! Look around, truly I am the best goodlooking');
-  console.log ('Kenneth is the best looking man.');
-};
+guapo();
 
 for (var i = 3; i >= 0; i--){
   var guess = parseInt(prompt('Pick a number between 1-20.'));
