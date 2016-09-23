@@ -1,3 +1,7 @@
+body {
+  background-image: url('background.png');
+  opacity: 1;
+}
 
 h1 {
   text-align: center;
@@ -5,15 +9,18 @@ h1 {
 }
 
 header {
-  outline: 1px black solid;
   text-align: justify;
+}
+
+li  {
+  padding: 5px;
 }
 
 #bio, #education, #twitter {
   width: 300px;
+  height: 400px;
   float:left;
-  margin: 10px;
-  outline: 1px black solid;
+  overflow: hidden;
 }
 
 h3 {
@@ -28,10 +35,13 @@ h3 {
   left: 0;
   background-color: #efefef;
   text-align: center;
+  align-items:baseline;
 }
 
 .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 130px;
+  align-items: baseline;
 }

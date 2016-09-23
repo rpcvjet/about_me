@@ -88,7 +88,7 @@ function numGuess() {
     if (guess < lucky){
       alert ('That\'s not it. Your guess is too LOW! Choose again. You have ' + i + ' more chances.');
     }
-    else {
+    if (guess === lucky) {
       alert('That\'s right!');
       counter++;
       break;
