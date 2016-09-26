@@ -1,0 +1,45 @@
+
+body{  background-color: grey;
+}
+
+h1 {  font-family: "Arial";
+      font-size: 45px;
+      display: flex;
+      justify-content: center;
+}
+
+h2 {
+        font-family: "Arial";
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+}
+
+#colorcards{
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
+
+
+    }
+.blackback img {
+        float: left;
+        width: 128px;
+
+}
+
+.blueback img {
+        float: center;
+        width: 128px;
+}
+
+.redback img {
+
+
+        float: right;
+        width:128px
+}
+
+.nickleback {
+  text-align: center;
+}

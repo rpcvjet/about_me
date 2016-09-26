@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="
+    style.css">
+    <meta charset="utf-8">
+    <title>RandomColorGenerator</title>
+  </head>
+  <body>
+
+    <style>
+    body{
+      background-color: rgb(255,255,255);
+        }
+     </style>
+
+
+     <div id ="header">
+
+
+
+     <button type="button" style="width:200px;height:100px; font-size:20px; box-shadow: 10px 10px 10px #888888;" onclick="test()">Click Me!</button>
+
+
+   </div>
+
+<h4><a href="/home/kenneth/codefellows/201/about_me/index.html">About me</a></h4>
+
+  <script>
+  function test () {
+   var r = Math.floor(Math.random() * 255) + 1;
+   var g = Math.floor(Math.random() * 255) + 1;
+   var b = Math.floor(Math.random() * 255) + 1;
+   random = "rgb("+r+","+g+","+b+") ";
+   var final = document.body.style.backgroundColor = random
+ }
+
+  </script>
+  </body>
+</html>
