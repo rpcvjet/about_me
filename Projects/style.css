@@ -32,7 +32,10 @@ li {
   list-style: none;
   margin-top: 50px;
   cursor: pointer;
+}
 
+li:active{
+  background-color: currentColor;
 }
 
 
@@ -52,6 +55,7 @@ li {
   border-bottom-style: solid;
   border-right-style: solid;
   border-width: thick;
+  display: inline-block;
 
 }
 
@@ -84,10 +88,14 @@ li {
 
   height:95px;
   width: 350px;
-  margin-left:150px;
+  
   border-bottom-style: solid;
   border-right-style: solid;
   border-width: thick;
+  padding:0;
+    margin:0;
+    float: left;
+
 }
 
 #six {
@@ -128,6 +136,8 @@ li {
   border-bottom-style: solid;
   border-right-style: solid;
   border-width: thick;
+  display: inline-block;
+
 }
 
 #ten {
@@ -167,6 +177,8 @@ li {
   border-bottom-style: solid;
   border-right-style: solid;
   border-width: thick;
+  display: inline-block;
+
 }
 
 #fourteen{
@@ -205,6 +217,8 @@ li {
   margin-left:216px;
   border-bottom-style: solid;
   border-width: thick;
+  display: inline-block;
+
 }
 
 #eightteen{
