@@ -1,0 +1,32 @@
+body, html{
+  background-color: #DCF2B0;
+  height: 1000px;
+  margin: 0px;
+}
+
+#fixed{
+  height: 300px;
+  position: fixed;
+  top: 300px;
+ }
+
+
+#moving{
+  width: 100%;
+  height: 100%;
+  top: 2000px;
+  outline: 1px solid blue;
+  position: absolute;
+  margin-left:0px;
+  letter-spacing: 3px;
+
+}
+
+p {
+  display: block;
+  font-size: 32px;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
